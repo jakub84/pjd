@@ -23,9 +23,10 @@ const LogoContainer = styled.div`
   justify-content: center;
   align-items: center;
   padding: 30px 5px 0 5px;
+  transform: scale(0.8) translateY(-30px);
 
   @media screen and (max-width: 400px) {
-    transform: scale(0.8) translateY(-30px);
+    transform: scale(0.6) translateY(-50px);
   }
 `;
 

@@ -10,15 +10,10 @@ const NavContainer = styled.div`
   min-width:100px;
   padding:10px 20px; 
   background:rgba(255,255,255,0.95);
-  /* border-top-left-radius:10px;
-  border-bottom-left-radius:10px;
-  border: 1px solid rgba(0,0,0,0.15); */
   cursor: pointer;
 
 `;
 const NavBurger = styled.div`
-  /* position: fixed; */
-  /* right: 20px; */
   display: flex;
   flex-direction: column;
   align-items: space-between;
