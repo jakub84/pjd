@@ -8,7 +8,7 @@ const NavListContainer = styled.div`
   right: 0;
   bottom: 0;
   background: rgb(178,26,59);
-background: radial-gradient(circle, rgba(178,26,59,0.90) 0%, rgba(178,26,59,1) 100%);
+background: radial-gradient(circle, rgba(178,26,59,0.95) 0%, rgba(178,26,59,1) 100%);
   width: 100%;
   height: 100vh;
   color:#fff;
