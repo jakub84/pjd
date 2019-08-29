@@ -16,19 +16,24 @@ const TechnologyWrapper = styled.section`
   border-radius: 20px;
   overflow: hidden;
   height: inherit;
+  position:relative;
   @media (max-width: 1000px) {
     padding:10px;
   }
 
   @media (max-width: 400px) {
     padding:0;
-    transform: scale(0.8);
-    margin:-10px;
+    transform: scale(0.7);
+    margin:-20px;
   }
   cursor: pointer;
   :hover {
     animation: ${showDescriptionAnimation} 0.4s linear forwards;
     background-color: rgba(0, 0, 0, 0.05);
+    @media (max-width: 400px) {
+      background-color: rgba(0, 0, 0, 0.9);
+      z-index:2;
+  }
   }
 `;
 
