@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="623.844" height="1169.203" viewBox="0 0 623.844 1169.203">
+  <defs>
+    <filter id="Change_Color" x="0" y="0" width="623.844" height="1169.203" filterUnits="userSpaceOnUse">
+      <feOffset dy="16" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="15.5" result="blur"/>
+      <feFlood flood-opacity="0.278"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-opacity="0.161"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <g id="mobile" transform="translate(-647.623 -2684.557)">
+    <g id="Device" transform="translate(694.123 2715.057)">
+      <g transform="matrix(1, 0, 0, 1, -46.5, -30.5)" filter="url(#Change_Color)">
+        <path id="Change_Color-2" data-name="Change Color" d="M.006,538.47q0-230.079.035-460.157c.01-24.558,9.646-45.054,27.59-61.619A60.378,60.378,0,0,1,59.988.823a65.5,65.5,0,0,1,9.774-.7Q217.594.067,365.426.092c31.034,0,62.07.246,93.1-.088,20.19-.217,36.631,7.425,50.067,22a82.72,82.72,0,0,1,21.983,49.336c.237,2.46.154,4.953.154,7.431q.009,283.62.006,567.24,0,176.389.107,352.778c.064,29.093-19.414,59.5-46.117,71.675a62.986,62.986,0,0,1-26.516,5.683q-158.838-.051-317.678-.023c-22.11,0-44.224-.213-66.33.069-17.444.223-32.445-5.7-45.441-16.927-14.739-12.732-24.3-28.628-27.712-47.927a77.093,77.093,0,0,1-1-13.31Q-.042,887.826,0,777.62q0-119.575,0-239.15" transform="translate(46.5 30.5)" fill="#fefefe"/>
+      </g>
+    </g>
+    <path id="Rectangle_2145" data-name="Rectangle 2145" d="M0,0H0A8.9,8.9,0,0,1,8.9,8.9V90.726a8.9,8.9,0,0,1-8.9,8.9H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z" transform="translate(693.816 3179.764) rotate(180)" fill="#fff"/>
+    <path id="Rectangle_2146" data-name="Rectangle 2146" d="M0,0H0A8.9,8.9,0,0,1,8.9,8.9V90.726a8.9,8.9,0,0,1-8.9,8.9H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z" transform="translate(693.816 3057.148) rotate(180)" fill="#fff"/>
+    <path id="Rectangle_2147" data-name="Rectangle 2147" d="M0,0H0A8.9,8.9,0,0,1,8.9,8.9V44.745a8.9,8.9,0,0,1-8.9,8.9H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z" transform="translate(693.816 2914.095) rotate(180)" fill="#fff"/>
+    <g id="Device-2" data-name="Device" transform="translate(694.124 2715.057)">
+      <path id="Change_Color-3" data-name="Change Color" d="M.006,538.47q0-230.079.035-460.157c.01-24.558,9.646-45.054,27.59-61.619A60.378,60.378,0,0,1,59.988.823a65.5,65.5,0,0,1,9.774-.7Q217.594.067,365.426.092c31.034,0,62.07.246,93.1-.088,20.19-.217,36.631,7.425,50.067,22a82.72,82.72,0,0,1,21.983,49.336c.237,2.46.154,4.953.154,7.431q.009,283.62.006,567.24,0,176.389.107,352.778c.064,29.093-19.414,59.5-46.117,71.675a62.986,62.986,0,0,1-26.516,5.683q-158.838-.051-317.678-.023c-22.11,0-44.224-.213-66.33.069-17.444.223-32.445-5.7-45.441-16.927-14.739-12.732-24.3-28.628-27.712-47.927a77.093,77.093,0,0,1-1-13.31Q-.042,887.826,0,777.62q0-119.575,0-239.15" transform="translate(0 0)" fill="#fefefe"/>
+    </g>
+    <path id="Border" d="M.047,508.974Q.047,298.385.053,87.8c0-13.779-.19-27.567.149-41.34C.734,24.91,16.929,5.8,37.984,1.317A55,55,0,0,1,49.487.089q23.051,0,46.1-.012c2.279-.006,4.34.384,5.923,2.172a6.9,6.9,0,0,1,1.633,4.658,49.659,49.659,0,0,0,.833,9.763,26.362,26.362,0,0,0,25.574,20.909c18.931.152,37.868.054,56.8.057q74.946,0,149.891,0a37.135,37.135,0,0,0,7.7-.518,26.764,26.764,0,0,0,21.385-24.949c.1-1.88.077-3.769.214-5.646.292-4,2.725-6.4,6.75-6.408C388.741.08,405.2-.173,421.654.207c21.71.506,39.475,14.535,45.588,35.373a42.371,42.371,0,0,1,1.7,12.021q-.03,49.678,0,99.347,0,409.273.03,818.568c0,6.872-.351,13.654-2.945,20.139q-10.472,26.148-38.181,31.175a53.833,53.833,0,0,1-9.781.595H60.3c-4.361,0-8.728.06-13.086-.089A48.472,48.472,0,0,1,.7,976.82a58.9,58.9,0,0,1-.637-10.084Q.046,812.793.053,658.88V508.974Z" transform="translate(725.18 2744.223)" fill="#dedede"/>
+    <path id="Rectangle_2148" data-name="Rectangle 2148" d="M0,0H0A8.9,8.9,0,0,1,8.9,8.9v123A8.9,8.9,0,0,1,0,140.8H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z" transform="translate(1225.476 2957.522)" fill="#fff"/>
+    <g id="Group_1128" data-name="Group 1128" transform="translate(890.634 2745.743)">
+      <rect id="Rectangle_2101" data-name="Rectangle 2101" width="69.008" height="10.08" rx="5.04" transform="translate(32.494 5.04)" opacity="0.054"/>
+      <g id="Group_1126" data-name="Group 1126" transform="translate(0 0)">
+        <ellipse id="Ellipse_1096" data-name="Ellipse 1096" cx="10.079" cy="10.079" rx="10.079" ry="10.079" transform="translate(117.48 0)" fill="url(#linear-gradient)"/>
+        <ellipse id="Ellipse_1098" data-name="Ellipse 1098" cx="6.679" cy="6.679" rx="6.679" ry="6.679" transform="translate(0 3.4)" fill="#f0f0f0"/>
+        <ellipse id="Ellipse_1097" data-name="Ellipse 1097" cx="4.32" cy="4.32" rx="4.32" ry="4.32" transform="translate(123.24 5.76)" fill="#035a81" opacity="0.15"/>
+      </g>
+    </g>
+  </g>
+</svg>

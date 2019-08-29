@@ -1,0 +1,38 @@
+@font-face {
+  font-family: "main-lato";
+  src: url("../assets/fonts/Lato-Regular.ttf");
+}
+
+@font-face {
+  font-family: "main-lato-black";
+  src: url("../assets/fonts/Lato-Black.ttf");
+}
+
+@font-face {
+  font-family: "main-quicksand-bold";
+  src: url("../assets/fonts/Quicksand-Bold.ttf");
+}
+
+@font-face {
+  font-family: "main-quicksand";
+  src: url("../assets/fonts/Quicksand-Regular.ttf");
+}
+
+@font-face {
+  font-family: "main-quicksand-medium";
+  src: url("../assets/fonts/Quicksand-Medium.ttf");
+}
+
+@font-face {
+  font-family: "main-quicksand-light";
+  src: url("../assets/fonts/Quicksand-Light.ttf");
+}
+
+body {
+  font-family: 'main-lato';
+}
+
+body * {
+  transition: all 0.3s;
+  box-sizing: border-box;
+}

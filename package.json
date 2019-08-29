@@ -23,12 +23,14 @@
     "gatsby-source-filesystem": "^2.0.37",
     "gatsby-transformer-remark": "^2.3.12",
     "gatsby-transformer-sharp": "^2.1.19",
+    "gh-pages": "^2.1.1",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-cookie-consent": "^2.3.1",
     "react-dom": "^16.8.6",
     "react-gtm-module": "^2.0.7",
     "react-helmet": "^5.2.1",
+    "react-reveal": "^1.2.2",
     "styled-components": "^4.2.1",
     "yup": "^0.27.0"
   },
@@ -40,6 +42,7 @@
   ],
   "license": "UNLICENSED",
   "scripts": {
+    "deploy:github": "npm run build && node ./scripts/deploy-github",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "deploy": "gatsby-plugin-s3 deploy --yes",
