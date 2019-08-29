@@ -1,30 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
+import Bounce from 'react-reveal/Bounce';
+import Fade from 'react-reveal/Fade';
 import ContentCenter from '../helpers/ContentCenter';
 import img from '../../assets/images/hero-image@2x.jpg';
+import H1 from '../textComponents/h1';
+import Paragraph from '../textComponents/mainParagraph';
+import ColorText from '../textComponents/colorBold';
 
 const HeroContainer = styled.div`
   text-align: center;
   width: 100%;
   margin-bottom: 40px;
-`;
-
-const MainHeadline = styled.h1`
-  text-align: center;
-  font-family: "main-black";
-  font-size: 60px;
-  margin-bottom: 40px;
-  text-transform: uppercase;
-
-  @media screen and (max-width: 400px) {
-    font-size: 30px;
-    margin-bottom: 20px;
-  }
-`;
-const Paragraph = styled.p`
-  text-align: center;
-  font-family: "main";
-  font-size: 18px;
 `;
 
 const MainImage = styled.div`
@@ -46,15 +33,21 @@ const MainImage = styled.div`
   }
 `;
 
-const Index = ({ headline, paragraph }) => (
+const Index = () => (
   <>
     <ContentCenter>
       <HeroContainer>
-        <MainHeadline>{headline}</MainHeadline>
-        <Paragraph>{paragraph}</Paragraph>
+        <Bounce>
+          <H1>
+            Hi this is <ColorText>headline</ColorText>
+          </H1>
+          <Paragraph>and this is <ColorText>Paragraph</ColorText></Paragraph>
+        </Bounce>
       </HeroContainer>
     </ContentCenter>
-    <MainImage />
+    <Fade bottom>
+      <MainImage />
+    </Fade>
   </>
 );
 

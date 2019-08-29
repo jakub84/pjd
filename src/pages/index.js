@@ -3,12 +3,18 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Header from '../components/header';
 import HeroImage from '../components/heroImage';
+import ProjectsPortfolio from '../components/projectPortfolio';
+import FrontProject from '../components/projectPortfolio/frontProject';
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <Header />
-    <HeroImage headline="this is headline" paragraph="this is paragraph" />
+    <HeroImage />
+    <ProjectsPortfolio>
+      <FrontProject colored />
+      <FrontProject />
+    </ProjectsPortfolio>
   </Layout>
 );
 

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
+import Flip from 'react-reveal/Flip';
 import Logo from './Logo';
 import ContentCenter from '../helpers/ContentCenter';
 import Navigation from './Navigation';
@@ -35,15 +36,14 @@ const Index = () => {
   return (
     <HeaderWrapper>
       <ContentCenter rowDirection>
-        <LogoContainer>
-          <Link to="/">
-            <Logo />
-          </Link>
-        </LogoContainer>
-        <Navigation
-          menuSwitcher={menuSwitcher}
-          setMenuSwitcher={setMenuSwitcher}
-        />
+        <Flip top>
+          <LogoContainer>
+            <Link to="/">
+              <Logo />
+            </Link>
+          </LogoContainer>
+        </Flip>
+        <Navigation menuSwitcher={menuSwitcher} setMenuSwitcher={setMenuSwitcher} />
       </ContentCenter>
     </HeaderWrapper>
   );
