@@ -1,18 +1,23 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import ContentCenter from '../helpers/ContentCenter';
 import H2 from '../textComponents/h2';
-import MainParagraph from '../textComponents/mainParagraph';
 import MobileWhiteImg from '../../assets/images/mobile.svg';
 import MobileBlackImg from '../../assets/images/mobile-black.svg';
 import TechnologyIcon from '../icons/techologyIcon';
 import PsIcon from '../../assets/images/ps.svg';
+import aiIcon from '../../assets/images/ai.svg';
+import xdIcon from '../../assets/images/xd.svg';
+import selfdesignedIcon from '../../assets/images/design.svg';
 import ReactIcon from '../../assets/images/React-icon.svg';
 import RWDIcon from '../../assets/images/rwd.svg';
+import htmlIcon from '../../assets/images/html-5-logo.svg';
+import sassIcon from '../../assets/images/sass.svg';
 import LinkButton from '../buttons/LinkButton';
 
 const ProjectWrapper = styled.section`
   padding: 120px 0;
+  width: 100%;
   overflow: hidden;
   display: inline-block;
   background-color: ${props => (props.colored ? '#B21A3B' : '#fff')};
@@ -95,68 +100,111 @@ const ButtonContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin:10px 0 30px 0;
+  margin: 10px 0 30px 0;
 `;
 
-const Index = ({ colored }) => (
+const frontProject = ({
+  colored,
+  name,
+  github,
+  live,
+  ps,
+  rjs,
+  rwd,
+  ai,
+  xd,
+  html,
+  sass,
+  selfdesigned,
+  heroImage,
+}) => (
   <ProjectWrapper colored={colored}>
     <ContentCenter>
       <H2 marginBottom="40px" colored={colored}>
-        This is Heading2
+        {name}
       </H2>
       <ButtonContainer>
-        <LinkButton colored={colored} content="See on Github" path="#" />
-        <LinkButton colored={colored} content="See live version" path="#" />
+        {github && <LinkButton colored={colored} content="See on Github" path={github} />}
+        {live && <LinkButton colored={colored} content="See live version" path={live} />}
       </ButtonContainer>
       <ProjectDetails>
         <TechnologiesContaner>
-          <TechnologyIcon
-            img={PsIcon}
-            colored={colored}
-            technologyDescription="This is description"
-            technologyTitle="Adobe Photoshop"
-          />
-          <TechnologyIcon
-            img={ReactIcon}
-            colored={colored}
-            technologyDescription="This is description"
-            technologyTitle="React.js "
-          />
-          <TechnologyIcon
-            img={RWDIcon}
-            colored={colored}
-            technologyDescription="This is description"
-            technologyTitle="RWD"
-          />
+          {ps && (
+            <TechnologyIcon
+              img={PsIcon}
+              colored={colored}
+              technologyDescription="Design was created in Adobe Photoshop from scratch"
+              technologyTitle="Adobe Photoshop"
+            />
+          )}
+
+          {ai && (
+            <TechnologyIcon
+              img={aiIcon}
+              colored={colored}
+              technologyDescription="Elements like logos, icons etc was created in Adobe Illustrator"
+              technologyTitle="Adobe Illustrator"
+            />
+          )}
+          {xd && (
+            <TechnologyIcon
+              img={xdIcon}
+              colored={colored}
+              technologyDescription="Design was created in Adobe XD from scratch"
+              technologyTitle="Adobe XD"
+            />
+          )}
+          {selfdesigned && (
+            <TechnologyIcon
+              img={selfdesignedIcon}
+              colored={colored}
+              technologyDescription="Designed and developed from scratch"
+              technologyTitle="Self Designed"
+            />
+          )}
         </TechnologiesContaner>
 
         <ProjecImageContainer>
-          <ProjectInfoContainer>This is project name</ProjectInfoContainer>
+          <ProjectInfoContainer>{heroImage}</ProjectInfoContainer>
           <ProjecImage src={colored ? MobileWhiteImg : MobileBlackImg} />
         </ProjecImageContainer>
         <TechnologiesContaner>
-          <TechnologyIcon
-            img={PsIcon}
-            colored={colored}
-            technologyDescription="This is description"
-            technologyTitle="Adobe Photoshop"
-          />
-          <TechnologyIcon
-            img={PsIcon}
-            colored={colored}
-            technologyDescription="This is description"
-            technologyTitle="Adobe Photoshop"
-          />
-          <TechnologyIcon
-            img={PsIcon}
-            colored={colored}
-            technologyDescription="This is description"
-            technologyTitle="Adobe Photoshop"
-          />
+          {rjs && (
+            <TechnologyIcon
+              img={ReactIcon}
+              colored={colored}
+              technologyDescription="Developed in React.js"
+              technologyTitle="React.js "
+            />
+          )}
+          {html && (
+            <TechnologyIcon
+              img={htmlIcon}
+              colored={colored}
+              technologyDescription="Develped in html5 and css3"
+              technologyTitle="html"
+            />
+          )}
+          {rwd && (
+            <TechnologyIcon
+              img={RWDIcon}
+              colored={colored}
+              technologyDescription="Project is responive"
+              technologyTitle="RWD"
+            />
+          )}
+          {sass && (
+            <TechnologyIcon
+              img={sassIcon}
+              colored={colored}
+              technologyDescription="Developed in Sass"
+              technologyTitle="sass"
+            />
+          )}
         </TechnologiesContaner>
       </ProjectDetails>
     </ContentCenter>
   </ProjectWrapper>
 );
 
-export default Index;
+export default frontProject;

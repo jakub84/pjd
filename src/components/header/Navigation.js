@@ -11,6 +11,7 @@ const NavContainer = styled.div`
   padding:10px 20px; 
   background:rgba(255,255,255,0.95);
   cursor: pointer;
+  border-radius:20px;
 
 `;
 const NavBurger = styled.div`
@@ -25,7 +26,7 @@ const NavBurger = styled.div`
 const Navigation = ({ menuSwitcher, setMenuSwitcher }) => (
   <>
     <NavContainer onClick={() => setMenuSwitcher(!menuSwitcher)}>
-      <NavBurger>{menuSwitcher ? 'Profile' : 'webSite'}</NavBurger>
+      <NavBurger>{menuSwitcher ? 'About me' : 'webSite'}</NavBurger>
     </NavContainer>
     {!menuSwitcher && <NavList />}
   </>

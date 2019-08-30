@@ -5,15 +5,15 @@ import Flip from 'react-reveal/Flip';
 
 const bounceAnimation = keyframes`
 0 { transform:scale(1, 1);}
-40% { transform:scale(0.95, 1);}
-60% { transform:scale(1.05, 1); box-shadow: 0 9px 14px rgba(87, 76, 173, 0.27);}
-100% { transform:scale(1, 1); background-color: #000;border: 3px solid #000; color: #fff;  box-shadow: 0 9px 14px rgba(87, 76, 173, 0.27);}
+40% { transform:scale(1, 0.8);}
+60% { transform:scale(1, 1.2);}
+100% { transform:scale(1, 1); background-color: #B21A3B; color:#fff; }
 `;
 
 const ButtonWrapper = styled.div`
   padding: 15px 30px;
   margin:30px 0;
-  border: 3px solid #B21A3B;
+  border: 1px solid #B21A3B;
   border-radius: 29px;
   box-shadow: 0 9px 14px rgba(173, 76, 76, 0.27);
   text-transform: uppercase;

@@ -63,8 +63,8 @@ const ImageWhite = styled.img`
 const IconContainer = styled.div`
   width: 120px;
   height: 120px;
-  border-radius: 100%;
-  border: ${props => (props.colored ? '1px solid #fff' : '1px solid #C3C1C1')};
+  border-radius: 20px;
+  border: ${props => (props.colored ? '1px solid rgba(255,255,255,0.2)' : '1px solid rgba(0,0,0,0.1)')};
   margin: 20px;
   display: flex;
   flex-direction: column;

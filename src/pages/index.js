@@ -4,17 +4,22 @@ import SEO from '../components/seo';
 import Header from '../components/header';
 import HeroImage from '../components/heroImage';
 import ProjectsPortfolio from '../components/projectPortfolio';
-import FrontProject from '../components/projectPortfolio/frontProject';
+import GraphicProject from '../components/projectPortfolio/graphicProject';
+import Footer from '../components/footer';
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <Header />
     <HeroImage />
+    <ProjectsPortfolio frontend />
     <ProjectsPortfolio>
-      <FrontProject colored />
-      <FrontProject />
+      <GraphicProject />
+      <GraphicProject />
+      <GraphicProject />
+      <GraphicProject />
     </ProjectsPortfolio>
+    <Footer />
   </Layout>
 );
 
