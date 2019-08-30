@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Fade from 'react-reveal/Fade';
 import ContentCenter from '../helpers/ContentCenter';
 import H2 from '../textComponents/h2';
 import MobileWhiteImg from '../../assets/images/mobile.svg';
@@ -120,89 +121,91 @@ const frontProject = ({
 }) => (
   <ProjectWrapper colored={colored}>
     <ContentCenter>
-      <H2 marginBottom="40px" colored={colored}>
-        {name}
-      </H2>
-      <ButtonContainer>
-        {github && <LinkButton colored={colored} content="See on Github" path={github} />}
-        {live && <LinkButton colored={colored} content="See live version" path={live} />}
-      </ButtonContainer>
-      <ProjectDetails>
-        <TechnologiesContaner>
-          {ps && (
-            <TechnologyIcon
-              img={PsIcon}
-              colored={colored}
-              technologyDescription="Design was created in Adobe Photoshop from scratch"
-              technologyTitle="Adobe Photoshop"
-            />
-          )}
+      <Fade left>
+        <H2 marginBottom="40px" colored={colored}>
+          {name}
+        </H2>
+        <ButtonContainer>
+          {github && <LinkButton colored={colored} content="See on Github" path={github} />}
+          {live && <LinkButton colored={colored} content="See live version" path={live} />}
+        </ButtonContainer>
+        <ProjectDetails>
+          <TechnologiesContaner>
+            {ps && (
+              <TechnologyIcon
+                img={PsIcon}
+                colored={colored}
+                technologyDescription="Design was created in Adobe Photoshop from scratch"
+                technologyTitle="Adobe Photoshop"
+              />
+            )}
 
-          {ai && (
-            <TechnologyIcon
-              img={aiIcon}
-              colored={colored}
-              technologyDescription="Elements like logos, icons etc was created in Adobe Illustrator"
-              technologyTitle="Adobe Illustrator"
-            />
-          )}
-          {xd && (
-            <TechnologyIcon
-              img={xdIcon}
-              colored={colored}
-              technologyDescription="Design was created in Adobe XD from scratch"
-              technologyTitle="Adobe XD"
-            />
-          )}
-          {selfdesigned && (
-            <TechnologyIcon
-              img={selfdesignedIcon}
-              colored={colored}
-              technologyDescription="Designed and developed from scratch"
-              technologyTitle="Self Designed"
-            />
-          )}
-        </TechnologiesContaner>
+            {ai && (
+              <TechnologyIcon
+                img={aiIcon}
+                colored={colored}
+                technologyDescription="Elements like logos, icons etc was created in Adobe Illustrator"
+                technologyTitle="Adobe Illustrator"
+              />
+            )}
+            {xd && (
+              <TechnologyIcon
+                img={xdIcon}
+                colored={colored}
+                technologyDescription="Design was created in Adobe XD from scratch"
+                technologyTitle="Adobe XD"
+              />
+            )}
+            {selfdesigned && (
+              <TechnologyIcon
+                img={selfdesignedIcon}
+                colored={colored}
+                technologyDescription="Designed and developed from scratch"
+                technologyTitle="Self Designed"
+              />
+            )}
+          </TechnologiesContaner>
 
-        <ProjecImageContainer>
-          <ProjectInfoContainer>{heroImage}</ProjectInfoContainer>
-          <ProjecImage src={colored ? MobileWhiteImg : MobileBlackImg} />
-        </ProjecImageContainer>
-        <TechnologiesContaner>
-          {rjs && (
-            <TechnologyIcon
-              img={ReactIcon}
-              colored={colored}
-              technologyDescription="Developed in React.js"
-              technologyTitle="React.js "
-            />
-          )}
-          {html && (
-            <TechnologyIcon
-              img={htmlIcon}
-              colored={colored}
-              technologyDescription="Develped in html5 and css3"
-              technologyTitle="html"
-            />
-          )}
-          {rwd && (
-            <TechnologyIcon
-              img={RWDIcon}
-              colored={colored}
-              technologyDescription="Project is responive"
-              technologyTitle="RWD"
-            />
-          )}
-          {sass && (
-            <TechnologyIcon
-              img={sassIcon}
-              colored={colored}
-              technologyDescription="Developed in Sass"
-              technologyTitle="sass"
-            />
-          )}
-        </TechnologiesContaner>
-      </ProjectDetails>
+          <ProjecImageContainer>
+            <ProjectInfoContainer>{heroImage}</ProjectInfoContainer>
+            <ProjecImage src={colored ? MobileWhiteImg : MobileBlackImg} />
+          </ProjecImageContainer>
+          <TechnologiesContaner>
+            {rjs && (
+              <TechnologyIcon
+                img={ReactIcon}
+                colored={colored}
+                technologyDescription="Developed in React.js"
+                technologyTitle="React.js "
+              />
+            )}
+            {html && (
+              <TechnologyIcon
+                img={htmlIcon}
+                colored={colored}
+                technologyDescription="Develped in html5 and css3"
+                technologyTitle="html"
+              />
+            )}
+            {rwd && (
+              <TechnologyIcon
+                img={RWDIcon}
+                colored={colored}
+                technologyDescription="Project is responive"
+                technologyTitle="RWD"
+              />
+            )}
+            {sass && (
+              <TechnologyIcon
+                img={sassIcon}
+                colored={colored}
+                technologyDescription="Developed in Sass"
+                technologyTitle="sass"
+              />
+            )}
+          </TechnologiesContaner>
+        </ProjectDetails>
+      </Fade>
     </ContentCenter>
   </ProjectWrapper>
 );

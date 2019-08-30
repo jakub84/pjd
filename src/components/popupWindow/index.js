@@ -16,6 +16,9 @@ const PopupContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  html, body {
+  overflow: hidden;
+}
 `;
 
 const PopupContent = styled.div`
