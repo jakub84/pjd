@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import Fade from 'react-reveal/Fade';
-import { Link } from 'gatsby';
 import ContentCenter from '../helpers/ContentCenter';
 import H2 from '../textComponents/h2';
 import MainParagraph from '../textComponents/mainParagraph';
@@ -11,7 +9,7 @@ import TechnologyIcon from '../icons/techologyIcon';
 import PsIcon from '../../assets/images/ps.svg';
 import ReactIcon from '../../assets/images/React-icon.svg';
 import RWDIcon from '../../assets/images/rwd.svg';
-
+import LinkButton from '../buttons/LinkButton';
 
 const ProjectWrapper = styled.section`
   padding: 120px 0;
@@ -21,6 +19,12 @@ const ProjectWrapper = styled.section`
   * {
     color: ${props => (props.colored ? '#fff' : '#404040')};
   }
+  @media (max-width: 600px) {
+    padding: 60px 0 120px 0;
+  }
+  @media (max-width: 350px) {
+    padding: 30px 0 120px 0;
+  }
 `;
 
 const ProjectDetails = styled.div`
@@ -29,7 +33,7 @@ const ProjectDetails = styled.div`
   justify-content: center;
   align-items: center;
   @media (max-width: 1000px) {
-    flex-direction:column;
+    flex-direction: column;
   }
 `;
 
@@ -39,21 +43,19 @@ const ProjecImageContainer = styled.div`
   justify-content: center;
   align-items: center;
   position: relative;
-  overflow:hidden;
+  overflow: hidden;
   width: 30%;
   margin-top: 40px;
   @media (max-width: 1000px) {
-    order:2;
-    width:80%;
-    height:50vw;
-    align-items:flex-start;
+    order: 2;
+    width: 80%;
+    height: 50vw;
+    align-items: flex-start;
     margin-bottom: -120px;
   }
 
   @media (max-width: 400px) {
-
-    width:100%;
-
+    width: 100%;
   }
 `;
 
@@ -65,9 +67,8 @@ const ProjectInfoContainer = styled.div`
   justify-content: center;
   align-items: center;
   @media (max-width: 1000px) {
-    height:100%;
-    transform:translateY(20%);
-
+    height: 100%;
+    transform: translateY(20%);
   }
 `;
 
@@ -83,18 +84,30 @@ const TechnologiesContaner = styled.div`
   justify-content: center;
   min-height: 300px;
   @media (max-width: 1000px) {
-    width:100%;
-    flex-direction:row;
-    min-height:inherit;
-    flex-wrap:wrap;
+    width: 100%;
+    flex-direction: row;
+    min-height: inherit;
+    flex-wrap: wrap;
   }
+`;
+
+const ButtonContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin:10px 0 30px 0;
 `;
 
 const Index = ({ colored }) => (
   <ProjectWrapper colored={colored}>
     <ContentCenter>
-      <H2 marginBottom="40px" colored={colored}>This is Heading2</H2>
-      <MainParagraph marginBottom="30px" colored={colored}>This is paragraph</MainParagraph>
+      <H2 marginBottom="40px" colored={colored}>
+        This is Heading2
+      </H2>
+      <ButtonContainer>
+        <LinkButton colored={colored} content="See on Github" path="#" />
+        <LinkButton colored={colored} content="See live version" path="#" />
+      </ButtonContainer>
       <ProjectDetails>
         <TechnologiesContaner>
           <TechnologyIcon

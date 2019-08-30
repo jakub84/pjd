@@ -12,6 +12,10 @@ const HeroContainer = styled.div`
   text-align: center;
   width: 100%;
   margin-bottom: 40px;
+
+  @media screen and (max-width: 400px) {
+    margin-bottom:0;
+  }
 `;
 
 const MainImage = styled.div`
@@ -38,10 +42,10 @@ const Index = () => (
     <ContentCenter>
       <HeroContainer>
         <Bounce>
-          <H1>
-            Hi this is <ColorText>headline</ColorText>
+          <H1 marginBottom="40px">
+            Hi this is <ColorText>HEADLINE</ColorText>
           </H1>
-          <Paragraph>and this is <ColorText>Paragraph</ColorText></Paragraph>
+          <Paragraph>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu velit ac mauris luctus consectetur. Maecenas quis porttitor tortor, a tincidunt sapien. Aenean interdum sed arcu non ultricies.  <ColorText>Fusce blandit.</ColorText></Paragraph>
         </Bounce>
       </HeroContainer>
     </ContentCenter>

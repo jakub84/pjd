@@ -9,8 +9,8 @@ const PopupContainer = styled.div`
   left: 0;
   bottom: 0;
   right: 0;
-  width:100%;
-  height:100vh;
+  width: 100%;
+  height: 100vh;
   background-color: #000000cb;
   z-index: 9;
   display: flex;
@@ -36,6 +36,9 @@ const PopupHeading = styled.h3`
   color: #868686 !important;
   margin: 10px 0;
   font-size: 24px;
+  @media (max-width: 500px) {
+    font-size: 18px;
+  }
 `;
 
 const PopupParagraph = styled.p`
@@ -43,16 +46,26 @@ const PopupParagraph = styled.p`
   color: #868686 !important;
   margin: 10px 0 30px 0;
   font-size: 14px;
+
+  @media (max-width: 500px) {
+    font-size: 12px;
+  }
 `;
 
 const TechnologyImage = styled.img`
   box-sizing: content-box;
-  width: 140px;
-  height: 140px;
+  width: 80px;
+  height: 80px;
   margin: 0 0 20px 0;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 500px) {
+    width: 40px;
+    height: 40px;
+    margin: 0 0 10px 0;
+  }
 `;
 
 const PopupWindow = ({

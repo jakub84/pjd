@@ -12,12 +12,11 @@ const bounceAnimation = keyframes`
 
 const ButtonWrapper = styled.div`
   padding: 15px 30px;
-  margin:30px 0;
-  border: 3px solid #B21A3B;
+  margin: 20px 10px;
+  border: ${props => (props.colored ? '3px solid #fff' : '3px solid #C3C1C1')};
   border-radius: 29px;
-  box-shadow: 0 9px 14px rgba(173, 76, 76, 0.27);
   text-transform: uppercase;
-  color: #B21A3B !important;
+  color: ${props => (props.colored ? '#fff' : '#C3C1C1')};
   font-size: 16px;
   text-decoration: none;
   transition: all 0.3s;
@@ -33,11 +32,23 @@ const ButtonWrapper = styled.div`
     font-size: 12px;
     padding: 10px 20px;
   }
+
+  @media (max-width: 400px) {
+    font-size: 12px;
+    margin: 5px 10px;
+    padding: 20px 20px;
+  }
 `;
 
-const PopupButton = ({ content, onClick }) => (
+const PopupButton = ({
+  colored, content, onClick, path,
+}) => (
   <Flip left>
-    <ButtonWrapper onClick={onClick}>{content}</ButtonWrapper>
+    <a href={path} style={{ textDecoration: 'none' }}>
+      <ButtonWrapper colored={colored} onClick={onClick}>
+        {content}
+      </ButtonWrapper>
+    </a>
   </Flip>
 );
 

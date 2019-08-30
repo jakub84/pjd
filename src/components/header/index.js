@@ -13,6 +13,10 @@ const HeaderWrapper = styled.header`
   justify-content: center;
   align-items: center;
   margin-bottom: 50px;
+
+  @media screen and (max-width: 400px) {
+    margin-bottom: 0px;
+  }
 `;
 
 const LogoContainer = styled.div`
@@ -27,7 +31,7 @@ const LogoContainer = styled.div`
   transform: scale(0.8) translateY(-30px);
 
   @media screen and (max-width: 400px) {
-    transform: scale(0.6) translateY(-50px);
+    /* transform: scale(0.6) translateY(-50px); */
   }
 `;
 

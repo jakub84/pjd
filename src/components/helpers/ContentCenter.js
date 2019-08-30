@@ -10,6 +10,9 @@ const ContentCenter = styled.div`
   position:relative;
   flex-direction: ${props => (props.rowDirection ? 'row' : 'column')};
   justify-content: ${props => (props.Center ? 'center' : 'space-between')};
+
+  @media screen and (max-width: 400px) {
+  }
 `;
 
 export default ContentCenter;
