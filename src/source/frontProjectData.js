@@ -1,10 +1,34 @@
+import pk from '../assets/images/frontProjects/pk.jpg';
+import hang from '../assets/images/frontProjects/hang.jpg';
+import weather from '../assets/images/frontProjects/weather.jpg';
+
 export default [
   {
     id: '1',
+    name: 'Hangman Game',
+    github: 'https://github.com/jakub84/game',
+    live: 'https://jakub84.github.io/game/',
+    heroImage: hang,
+    technologies: [
+      {
+        photoshop: false,
+        illustrator: true,
+        selfdesigned: true,
+        xd: true,
+        rjs: true,
+        rwd: true,
+        sass: true,
+        styledcomponent: false,
+        html: false,
+      },
+    ],
+  },
+  {
+    id: '2',
     name: 'Kancelaria Website (2013)',
     github: '',
     live: 'http://www.notariusz-kania.com/',
-    heroImage: 'Hero Image',
+    heroImage: pk,
     technologies: [
       {
         photoshop: true,
@@ -20,51 +44,11 @@ export default [
     ],
   },
   {
-    id: '2',
-    name: 'Some Website',
-    github: '',
-    live: '',
-    heroImage: 'Hero Image',
-    technologies: [
-      {
-        photoshop: true,
-        illustrator: true,
-        selfdesigned: false,
-        xd: false,
-        rjs: true,
-        rwd: true,
-        sass: true,
-        styledcomponent: false,
-        html: false,
-      },
-    ],
-  },
-  {
     id: '3',
-    name: 'PiwoManiak Website (2013)',
-    github: '',
-    live: 'http://www.piwomaniak.com/',
-    heroImage: 'Hero Image',
-    technologies: [
-      {
-        photoshop: true,
-        illustrator: true,
-        selfdesigned: true,
-        xd: false,
-        rjs: false,
-        rwd: false,
-        sass: false,
-        styledcomponent: false,
-        html: true,
-      },
-    ],
-  },
-  {
-    id: '4',
     name: 'Weather App',
     github: 'https://github.com/jakub84/weather-app',
     live: 'https://jakub84.github.io/weather-app/',
-    heroImage: 'Hero Image',
+    heroImage: weather,
     technologies: [
       {
         photoshop: false,
@@ -79,24 +63,5 @@ export default [
       },
     ],
   },
-  {
-    id: '5',
-    name: 'Hangman Game',
-    github: 'https://github.com/jakub84/game',
-    live: 'https://jakub84.github.io/game/',
-    heroImage: 'Hero Image',
-    technologies: [
-      {
-        photoshop: false,
-        illustrator: true,
-        selfdesigned: true,
-        xd: true,
-        rjs: true,
-        rwd: true,
-        sass: true,
-        styledcomponent: false,
-        html: false,
-      },
-    ],
-  },
+
 ];
