@@ -23,9 +23,9 @@ const ImageProject = styled.img`
   }
 `;
 
-const GraphicProject = () => (
+const GraphicProject = ({ src }) => (
   <ProjectWrapper>
-    <ImageProject src="https://via.placeholder.com/150" />
+    <ImageProject src={src} />
   </ProjectWrapper>
 );
 

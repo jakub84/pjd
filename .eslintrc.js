@@ -40,5 +40,6 @@ module.exports = {
     'react/no-array-index-key': ['warn'],
     'react/no-unescaped-entities': ['warn'],
     'react/jsx-filename-extension': ['off'],
+    "linebreak-style": 0
   }
 };
