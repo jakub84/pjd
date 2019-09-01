@@ -1,6 +1,7 @@
 import pk from '../assets/images/frontProjects/pk.jpg';
 import hang from '../assets/images/frontProjects/hang.jpg';
 import weather from '../assets/images/frontProjects/weather.jpg';
+import go from '../assets/images/frontProjects/go.jpg';
 
 export default [
   {
@@ -43,8 +44,30 @@ export default [
       },
     ],
   },
+
   {
     id: '3',
+    name: 'Galeria Obrazu Rebrand (project)',
+    github: 'https://github.com/jakub84/newGo',
+    live: 'https://jakub84.github.io/newGo/',
+    heroImage: go,
+    technologies: [
+      {
+        photoshop: false,
+        illustrator: true,
+        selfdesigned: true,
+        xd: true,
+        rjs: true,
+        rwd: true,
+        sass: true,
+        styledcomponent: true,
+        html: false,
+      },
+    ],
+  },
+
+  {
+    id: '4',
     name: 'Weather App',
     github: 'https://github.com/jakub84/weather-app',
     live: 'https://jakub84.github.io/weather-app/',
