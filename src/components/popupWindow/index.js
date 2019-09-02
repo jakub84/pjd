@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useLayoutEffect } from 'react';
 import styled from 'styled-components';
 import Fade from 'react-reveal/Fade';
 import CloseButton from '../buttons/PopupButton';
@@ -16,9 +16,10 @@ const PopupContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  html, body {
-  overflow: hidden;
-}
+  html,
+  body {
+    overflow: hidden;
+  }
 `;
 
 const PopupContent = styled.div`
@@ -31,7 +32,7 @@ const PopupContent = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 30px;
+  padding: 30px 30px 10px 30px;
 `;
 
 const PopupHeading = styled.h3`
@@ -49,6 +50,7 @@ const PopupParagraph = styled.p`
   color: #868686 !important;
   margin: 10px 0 30px 0;
   font-size: 14px;
+  line-height:1.6;
 
   @media (max-width: 500px) {
     font-size: 12px;
@@ -71,18 +73,35 @@ const TechnologyImage = styled.img`
   }
 `;
 
+function useLockBodyScroll() {
+  useLayoutEffect(() => {
+    const originalStyle = window.getComputedStyle(document.body).overflow;
+    // Prevent scrolling on mount
+    document.body.style.overflow = 'hidden';
+    return () => (document.body.style.overflow = originalStyle);
+  }, []);
+}
+
 const PopupWindow = ({
-  img, technologyDescription, technologyTitle, onClick,
-}) => (
-  <PopupContainer onClick={onClick}>
-    <PopupContent>
-      <TechnologyImage src={img} alt={technologyTitle} />
-      <PopupHeading>{technologyTitle}</PopupHeading>
-      <PopupParagraph marginBottom="20px">{technologyDescription}</PopupParagraph>
-      {/* <CloseButton closedBtn onClick={onClick} /> */}
-      <CloseButton onClick={onClick} content="Close me" />
-    </PopupContent>
-  </PopupContainer>
-);
+  img,
+  technologyDescription,
+  technologyTitle,
+  onClick,
+}) => {
+  useLockBodyScroll();
+  return (
+    <>
+      <PopupContainer onClick={onClick}>
+        <PopupContent>
+          <TechnologyImage src={img} alt={technologyTitle} />
+          <PopupHeading>{technologyTitle}</PopupHeading>
+          <PopupParagraph marginBottom="20px">{technologyDescription}</PopupParagraph>
+          {/* <CloseButton closedBtn onClick={onClick} /> */}
+          <CloseButton onClick={onClick} content="Close me" />
+        </PopupContent>
+      </PopupContainer>
+    </>
+  );
+};
 
 export default PopupWindow;

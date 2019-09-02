@@ -152,7 +152,7 @@ const frontProject = ({
                 <TechnologyIcon
                   img={PsIcon}
                   colored={colored}
-                  technologyDescription="Design was created in Adobe Photoshop from scratch"
+                  technologyDescription="Software that is extensively used for raster image editing, graphic design and digital art"
                   technologyTitle="Adobe Photoshop"
                 />
               )}
@@ -161,7 +161,7 @@ const frontProject = ({
                 <TechnologyIcon
                   img={aiIcon}
                   colored={colored}
-                  technologyDescription="Elements like logos, icons etc was created in Adobe Illustrator"
+                  technologyDescription="Vector graphics editing program published by Adobe. It is useful for designing logos, clip art, blueprints, and other precise, resolution-independent illustrations."
                   technologyTitle="Adobe Illustrator"
                 />
               )}
@@ -169,7 +169,7 @@ const frontProject = ({
                 <TechnologyIcon
                   img={xdIcon}
                   colored={colored}
-                  technologyDescription="Design was created in Adobe XD from scratch"
+                  technologyDescription="XD empowers designers with the speed, precision, and quality to seamlessly iterate and share interactive prototypes with team members and reviewers across devices and platforms, including Windows, Mac, iOS, and Android."
                   technologyTitle="Adobe XD"
                 />
               )}
@@ -194,7 +194,7 @@ const frontProject = ({
                 <TechnologyIcon
                   img={ReactIcon}
                   colored={colored}
-                  technologyDescription="Developed in React.js"
+                  technologyDescription="Library for building composable user interfaces. It encourages the creation of reusable UI components, which present data that changes over time."
                   technologyTitle="React.js "
                 />
               )}
@@ -202,7 +202,7 @@ const frontProject = ({
                 <TechnologyIcon
                   img={htmlIcon}
                   colored={colored}
-                  technologyDescription="Develped in html5 and css3"
+                  technologyDescription="Hypertext Markup Language revision 5 (HTML5) is markup language for the structure and presentation of World Wide Web contents. HTML5 supports the traditional HTML and XHTML-style syntax and other new features in its markup, New APIs, XHTML and error handling."
                   technologyTitle="html"
                 />
               )}
@@ -210,7 +210,7 @@ const frontProject = ({
                 <TechnologyIcon
                   img={RWDIcon}
                   colored={colored}
-                  technologyDescription="Project is responive"
+                  technologyDescription="Responsive web design (RWD) is a web development approach that creates dynamic changes to the appearance of a website, depending on the screen size and orientation of the device being used to view it. RWD is one approach to the problem of designing for the multitude of devices available to customers, ranging from tiny phones to huge desktop monitors."
                   technologyTitle="RWD"
                 />
               )}
@@ -218,8 +218,8 @@ const frontProject = ({
                 <TechnologyIcon
                   img={sassIcon}
                   colored={colored}
-                  technologyDescription="Developed in Sass"
-                  technologyTitle="sass"
+                  technologyDescription="Sass is a CSS preprocessor, which adds special features such as variables, nested rules and mixins "
+                  technologyTitle="Sass"
                 />
               )}
             </TechnologiesContaner>

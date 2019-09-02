@@ -26,7 +26,7 @@ export default [
   },
   {
     id: '2',
-    name: 'Kancelaria Website (2013)',
+    name: 'Notary Website (2013)',
     github: '',
     live: 'http://www.notariusz-kania.com/',
     heroImage: pk,
@@ -47,7 +47,7 @@ export default [
 
   {
     id: '3',
-    name: 'Galeria Obrazu Rebrand (project)',
+    name: 'Galeria Obrazu Rebrand (mockup)',
     github: 'https://github.com/jakub84/newGo',
     live: 'https://jakub84.github.io/newGo/',
     heroImage: go,

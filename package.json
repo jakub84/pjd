@@ -11,6 +11,7 @@
     "@fortawesome/react-fontawesome": "^0.1.4",
     "animejs": "^3.0.1",
     "babel-plugin-styled-components": "^1.10.0",
+    "body-scroll-lock": "^2.6.4",
     "cuid": "^2.1.6",
     "formik": "^1.5.7",
     "gatsby": "^2.7.1",

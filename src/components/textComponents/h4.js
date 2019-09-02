@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const HeadingH4 = styled.h4`
-  font-family: 'main-Black';
+  font-family: 'main-quicksand-bold';
   font-size: 20px;
   color:'#000';
   margin-top: ${props => props.marginTop};
