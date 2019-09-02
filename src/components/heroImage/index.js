@@ -65,7 +65,7 @@ const Index = () => (
           <H1 marginBottom="40px">
             <ColorText>Frontend</ColorText> & Design
           </H1>
-          <Paragraph>What happens if we combine the skills of the <ColorText>frontend</ColorText> developer with the experience of the <ColorText>designer?</ColorText></Paragraph>
+          <Paragraph>What happens if we combine skills of <ColorText>frontend</ColorText> developer with experience of <ColorText>designer?</ColorText></Paragraph>
 
           <H4 marginTop="20px" marginBottom="20px">Skills summary:</H4>
           <TechnologyContainer>
@@ -79,7 +79,7 @@ const Index = () => (
             <Technology>Sketch</Technology>
             <Technology front>Scss</Technology>
             <Technology>Adobe Indesign</Technology>
-            <Technology front> &nbsp;&nbsp;...&nbsp;&nbsp; </Technology>
+            <Technology front>HTML5 & CSS</Technology>
           </TechnologyContainer>
         </Bounce>
       </HeroContainer>

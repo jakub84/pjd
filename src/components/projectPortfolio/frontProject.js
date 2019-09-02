@@ -138,7 +138,7 @@ const frontProject = ({
   return (
     <ProjectWrapper colored={colored}>
       <ContentCenter>
-        <Fade left>
+        <Fade left={colored} right={!colored}>
           <H2 marginBottom="40px" colored={colored}>
             {name}
           </H2>
