@@ -36,7 +36,7 @@ const LogoContainer = styled.div`
 `;
 
 const Index = () => {
-  const [menuSwitcher, setMenuSwitcher] = useState(true);
+  // const [menuSwitcher, setMenuSwitcher] = useState(true);
   return (
     <HeaderWrapper>
       <ContentCenter rowDirection>
@@ -47,7 +47,7 @@ const Index = () => {
             </Link>
           </LogoContainer>
         </Flip>
-        <Navigation menuSwitcher={menuSwitcher} setMenuSwitcher={setMenuSwitcher} />
+        {/* <Navigation menuSwitcher={menuSwitcher} setMenuSwitcher={setMenuSwitcher} /> */}
       </ContentCenter>
     </HeaderWrapper>
   );
