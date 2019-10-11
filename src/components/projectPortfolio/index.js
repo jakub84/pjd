@@ -28,6 +28,7 @@ const Index = ({ frontend, children }) => (
           sass={singleProject.technologies[0].sass}
           selfdesigned={singleProject.technologies[0].selfdesigned}
           styledcomponent={singleProject.technologies[0].styledcomponent}
+          material={singleProject.technologies[0].material}
           heroImage={singleProject.heroImage}
         />
       ))}

@@ -15,6 +15,7 @@ import RWDIcon from '../../assets/images/rwd.svg';
 import htmlIcon from '../../assets/images/html-5-logo.svg';
 import sassIcon from '../../assets/images/sass.svg';
 import LinkButton from '../buttons/LinkButton';
+import materialLogo from '../../assets/images/material-ui-logo.svg';
 
 const ProjectWrapper = styled.section`
   padding: 120px 0;
@@ -134,100 +135,107 @@ const frontProject = ({
   sass,
   heroImage,
   selfdesigned,
-}) => {
-  return (
-    <ProjectWrapper colored={colored}>
-      <ContentCenter>
-        <Fade left={colored} right={!colored}>
-          <H2 marginBottom="40px" colored={colored}>
-            {name}
-          </H2>
-          <ButtonContainer>
-            {github && <LinkButton colored={colored} content="See on Github" path={github} />}
-            {live && <LinkButton colored={colored} content="See live version" path={live} />}
-          </ButtonContainer>
-          <ProjectDetails>
-            <TechnologiesContaner>
-              {ps && (
-                <TechnologyIcon
-                  img={PsIcon}
-                  colored={colored}
-                  technologyDescription="Software that is extensively used for raster image editing, graphic design and digital art"
-                  technologyTitle="Adobe Photoshop"
-                />
-              )}
+  material,
+}) => (
+  <ProjectWrapper colored={colored}>
+    <ContentCenter>
+      <Fade left={colored} right={!colored}>
+        <H2 marginBottom="40px" colored={colored}>
+          {name}
+        </H2>
+        <ButtonContainer>
+          {github && <LinkButton colored={colored} content="See on Github" path={github} />}
+          {live && <LinkButton colored={colored} content="See live version" path={live} />}
+        </ButtonContainer>
+        <ProjectDetails>
+          <TechnologiesContaner>
+            {ps && (
+            <TechnologyIcon
+              img={PsIcon}
+              colored={colored}
+              technologyDescription="Software that is extensively used for raster image editing, graphic design and digital art"
+              technologyTitle="Adobe Photoshop"
+            />
+            )}
 
-              {ai && (
-                <TechnologyIcon
-                  img={aiIcon}
-                  colored={colored}
-                  technologyDescription="Vector graphics editing program published by Adobe. It is useful for designing logos, clip art, blueprints, and other precise, resolution-independent illustrations."
-                  technologyTitle="Adobe Illustrator"
-                />
-              )}
-              {xd && (
-                <TechnologyIcon
-                  img={xdIcon}
-                  colored={colored}
-                  technologyDescription="XD empowers designers with the speed, precision, and quality to seamlessly iterate and share interactive prototypes with team members and reviewers across devices and platforms, including Windows, Mac, iOS, and Android."
-                  technologyTitle="Adobe XD"
-                />
-              )}
-              {selfdesigned && (
-                <TechnologyIcon
-                  img={selfdesignedIcon}
-                  colored={colored}
-                  technologyDescription="Designed and developed from scratch"
-                  technologyTitle="Self Designed"
-                />
-              )}
-            </TechnologiesContaner>
+            {ai && (
+            <TechnologyIcon
+              img={aiIcon}
+              colored={colored}
+              technologyDescription="Vector graphics editing program published by Adobe. It is useful for designing logos, clip art, blueprints, and other precise, resolution-independent illustrations."
+              technologyTitle="Adobe Illustrator"
+            />
+            )}
+            {xd && (
+            <TechnologyIcon
+              img={xdIcon}
+              colored={colored}
+              technologyDescription="XD empowers designers with the speed, precision, and quality to seamlessly iterate and share interactive prototypes with team members and reviewers across devices and platforms, including Windows, Mac, iOS, and Android."
+              technologyTitle="Adobe XD"
+            />
+            )}
+            {selfdesigned && (
+            <TechnologyIcon
+              img={selfdesignedIcon}
+              colored={colored}
+              technologyDescription="Designed and developed from scratch"
+              technologyTitle="Self Designed"
+            />
+            )}
+          </TechnologiesContaner>
 
-            <ProjecImageContainer>
-              <ProjecImage
-                src={colored ? MobileWhiteImg : MobileBlackImg}
-                style={{ backgroundImage: `url(${heroImage})` }}
-              />
-            </ProjecImageContainer>
-            <TechnologiesContaner>
-              {rjs && (
-                <TechnologyIcon
-                  img={ReactIcon}
-                  colored={colored}
-                  technologyDescription="Library for building composable user interfaces. It encourages the creation of reusable UI components, which present data that changes over time."
-                  technologyTitle="React.js "
-                />
-              )}
-              {html && (
-                <TechnologyIcon
-                  img={htmlIcon}
-                  colored={colored}
-                  technologyDescription="Hypertext Markup Language revision 5 (HTML5) is markup language for the structure and presentation of World Wide Web contents. HTML5 supports the traditional HTML and XHTML-style syntax and other new features in its markup, New APIs, XHTML and error handling."
-                  technologyTitle="html"
-                />
-              )}
-              {rwd && (
-                <TechnologyIcon
-                  img={RWDIcon}
-                  colored={colored}
-                  technologyDescription="Responsive web design (RWD) is a web development approach that creates dynamic changes to the appearance of a website, depending on the screen size and orientation of the device being used to view it. RWD is one approach to the problem of designing for the multitude of devices available to customers, ranging from tiny phones to huge desktop monitors."
-                  technologyTitle="RWD"
-                />
-              )}
-              {sass && (
-                <TechnologyIcon
-                  img={sassIcon}
-                  colored={colored}
-                  technologyDescription="Sass is a CSS preprocessor, which adds special features such as variables, nested rules and mixins "
-                  technologyTitle="Sass"
-                />
-              )}
-            </TechnologiesContaner>
-          </ProjectDetails>
-        </Fade>
-      </ContentCenter>
-    </ProjectWrapper>
-  );
-};
+          <ProjecImageContainer>
+            <ProjecImage
+              src={colored ? MobileWhiteImg : MobileBlackImg}
+              style={{ backgroundImage: `url(${heroImage})` }}
+            />
+          </ProjecImageContainer>
+          <TechnologiesContaner>
+            {rjs && (
+            <TechnologyIcon
+              img={ReactIcon}
+              colored={colored}
+              technologyDescription="Library for building composable user interfaces. It encourages the creation of reusable UI components, which present data that changes over time."
+              technologyTitle="React.js "
+            />
+            )}
+            {html && (
+            <TechnologyIcon
+              img={htmlIcon}
+              colored={colored}
+              technologyDescription="Hypertext Markup Language revision 5 (HTML5) is markup language for the structure and presentation of World Wide Web contents. HTML5 supports the traditional HTML and XHTML-style syntax and other new features in its markup, New APIs, XHTML and error handling."
+              technologyTitle="html"
+            />
+            )}
+            {rwd && (
+            <TechnologyIcon
+              img={RWDIcon}
+              colored={colored}
+              technologyDescription="Responsive web design (RWD) is a web development approach that creates dynamic changes to the appearance of a website, depending on the screen size and orientation of the device being used to view it. RWD is one approach to the problem of designing for the multitude of devices available to customers, ranging from tiny phones to huge desktop monitors."
+              technologyTitle="RWD"
+            />
+            )}
+            {sass && (
+            <TechnologyIcon
+              img={sassIcon}
+              colored={colored}
+              technologyDescription="Sass is a CSS preprocessor, which adds special features such as variables, nested rules and mixins "
+              technologyTitle="Sass"
+            />
+            )}
+            {material && (
+            <TechnologyIcon
+              img={materialLogo}
+              colored={colored}
+              technologyDescription="React components for faster and easier web development"
+              technologyTitle="Material UI"
+            />
+            )}
+          </TechnologiesContaner>
+        </ProjectDetails>
+      </Fade>
+    </ContentCenter>
+  </ProjectWrapper>
+);
 
 export default frontProject;
