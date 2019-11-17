@@ -136,6 +136,7 @@ const frontProject = ({
   heroImage,
   selfdesigned,
   material,
+  styledcomponent,
 }) => (
   <ProjectWrapper colored={colored}>
     <ContentCenter>
@@ -221,6 +222,13 @@ const frontProject = ({
               colored={colored}
               technologyDescription="Sass is a CSS preprocessor, which adds special features such as variables, nested rules and mixins "
               technologyTitle="Sass"
+            />
+            )}
+            {styledcomponent && (
+            <TechnologyIcon
+              colored={colored}
+              technologyDescription="Styled-components lets you write actual CSS in your JavaScript. This means you can use all the features of CSS you use and love, including (but by far not limited to) media queries, all pseudo-selectors, nesting, etc."
+              technologyTitle="Styled-components"
             />
             )}
             {material && (

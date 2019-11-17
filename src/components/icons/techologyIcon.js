@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import styled, { keyframes } from 'styled-components';
 import Description from '../textComponents/description';
 import PopupWindow from '../popupWindow';
+import noLogo from '../../assets/images/frontProjects/no-logo.svg';
 
 const showDescriptionAnimation = keyframes`
 0 { transform:scale(1, 1);}
@@ -87,7 +88,7 @@ const Icon = ({
     <>
       {isVisible && (
         <PopupWindow
-          img={img}
+          img={img || noLogo}
           technologyDescription={technologyDescription}
           technologyTitle={technologyTitle}
           onClick={() => setVisible(false)}
@@ -99,7 +100,7 @@ const Icon = ({
         <IconContainer colored={colored}>
           <ImageContainer>
             {colored ? (
-              <ImageWhite src={img} alt={technology} />
+              <ImageWhite src={img || noLogo} alt={technology} />
             ) : (
               <Image src={img} alt={technology} />
             )}

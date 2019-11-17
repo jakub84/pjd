@@ -3,10 +3,32 @@ import hang from '../assets/images/frontProjects/hang.jpg';
 import weather from '../assets/images/frontProjects/weather.jpg';
 import go from '../assets/images/frontProjects/go.jpg';
 import users from '../assets/images/frontProjects/users-from-api.jpg';
+import gifs from '../assets/images/frontProjects/gif.jpg';
 
 export default [
   {
     id: '1',
+    name: 'Gif Search App',
+    github: 'https://github.com/jakub84/gif-react-app',
+    live: 'https://jakub84.github.io/gif-react-app/',
+    heroImage: gifs,
+    technologies: [
+      {
+        photoshop: false,
+        illustrator: true,
+        selfdesigned: true,
+        xd: true,
+        rjs: true,
+        rwd: true,
+        sass: false,
+        styledcomponent: true,
+        html: false,
+        material: false,
+      },
+    ],
+  },
+  {
+    id: '2',
     name: 'Users from APi',
     github: 'https://github.com/jakub84/react-form-app',
     live: 'https://jakub84.github.io/react-form-app/',
@@ -27,7 +49,7 @@ export default [
     ],
   },
   {
-    id: '2',
+    id: '3',
     name: 'Hangman Game',
     github: 'https://github.com/jakub84/game',
     live: 'https://jakub84.github.io/game/',
@@ -47,7 +69,7 @@ export default [
     ],
   },
   {
-    id: '3',
+    id: '4',
     name: 'Notary Website (2013)',
     github: '',
     live: 'http://www.notariusz-kania.com/',
@@ -68,7 +90,7 @@ export default [
   },
 
   {
-    id: '4',
+    id: '5',
     name: 'Galeria Obrazu Rebrand (mockup)',
     github: 'https://github.com/jakub84/newGo',
     live: 'https://jakub84.github.io/newGo/',
@@ -89,7 +111,7 @@ export default [
   },
 
   {
-    id: '5',
+    id: '6',
     name: 'Weather App',
     github: 'https://github.com/jakub84/weather-app',
     live: 'https://jakub84.github.io/weather-app/',
